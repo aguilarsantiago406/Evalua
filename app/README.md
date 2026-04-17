@@ -9,13 +9,21 @@ La aplicación sirve como prototipo para una agencia de viajes. Actualmente, cue
 El proyecto sigue la estructura estándar de Android (Gradle) y utiliza una arquitectura basada en Activities.
 
 Componentes Principales:
+
 •Paquete base: com.example.demo
+
 •Lenguajes: Kotlin (para la lógica principal y menús) y Java (para procesos específicos y pruebas).
+
 •Actividades:
+
 ◦MainActivity.kt: Pantalla de inicio de la aplicación.
+
 ◦activity_menu.kt: Menú principal del sistema.
+
 ◦activity_proceso.java: Actividad destinada al manejo de flujos de trabajo o procesos internos.
+
 ◦activity_prueba.java: Actividad utilizada para pruebas de componentes o lógica.
+
 -
 Recursos Visuales (Layouts):
 •activity_main.xml: Diseño de la pantalla de bienvenida con título, imagen de un bus y botón de acceso.
