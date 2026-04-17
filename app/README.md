@@ -26,9 +26,13 @@ Componentes Principales:
 
 -
 Recursos Visuales (Layouts):
+
 •activity_main.xml: Diseño de la pantalla de bienvenida con título, imagen de un bus y botón de acceso.
+
 •activity_menu.xml: Interfaz del menú principal.
+
 •activity_proceso.xml: Contenedor para la lógica de procesos.
+
 •activity_prueba.xml: Interfaz de experimentación.
 
 **🔄 Flujo de la Aplicación**
