@@ -1,65 +1,126 @@
-<!DOCTYPE html>
+html:           <!DOCTYPE html>
+
 <html lang="es">
+
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sistemas SENATI - IA Team</title>
+
   <link rel="stylesheet" href="style.css">
-  <title>Software Engineering & IA Team</title>
+
 </head>
+
 <body>
 
+
+
   <header>
-    <h1>TECH INNOVATORS</h1>
-    <div class="presentation">
-      <p>Somos un equipo de <strong>SENATI</strong> especializado en <strong>Ingeniería de Software con IA</strong>. 
-      Nuestra misión es investigar, aprender y desarrollar sistemas avanzados que definan el futuro tecnológico.</p>
+
+    <h1>SISTEMAS & IA - SENATI</h1>
+
+    <div class="presentacion">
+
+      Somos estudiantes de <strong>Ingeniería de Software con IA</strong>.
+
+      Nos apasiona investigar, aprender cosas nuevas y dominar el mundo de la programación.
+
     </div>
+
   </header>
 
-  <div class="team-container">
-    <div class="member-card" xx="toggleInfo(this)">
-      <div class="logo-container">
-        <img src="https://cdn-icons-png.flaticon.com/512/2353/2353678.png" alt="Santiago Pinguino">
-      </div>
-      <h2>Santiago Aguilar</h2>
-      <p class="instruction">¡HAZ CLIC PARA VER PERFIL!</p>
-      <div class="extra-info">
-        <strong>Edad:</strong> 20 años.<br>
-        Un chico muy hábil que le apasiona la programación y el desarrollo de sistemas inteligentes.
-      </div>
+
+
+  <div class="equipo">
+
+    
+
+    <div class="tarjeta-container">
+
+      <input type="checkbox" id="btn-santiago" class="trigger">
+
+      <label for="btn-santiago" class="tarjeta">
+
+        <div class="foto-perfil">
+
+          <img src="https://cdn-icons-png.flaticon.com/512/2353/2353678.png" alt="Santiago">
+
+        </div>
+
+        <div class="nombre">Santiago Aguilar</div>
+
+        <div class="indicador">CLIC PARA INFO</div>
+
+        <div class="info-detallada">
+
+          Santiago es un chico muy hábil de <strong>20 años</strong>. Le encanta la programación y resolver retos lógicos complejos.
+
+        </div>
+
+      </label>
+
     </div>
 
-    <div class="member-card" xx="toggleInfo(this)">
-      <div class="logo-container">
-        <img src="https://cdn-icons-png.flaticon.com/512/616/616412.png" alt="Angie Leona">
-      </div>
-      <h2>Angie Palo</h2>
-      <p class="instruction">¡HAZ CLIC PARA VER PERFIL!</p>
-      <div class="extra-info">
-        <strong>Edad:</strong> 19 años.<br>
-        Chica programadora dedicada, amante del código y apasionada por la ingeniería de software.
-      </div>
+
+
+    <div class="tarjeta-container">
+
+      <input type="checkbox" id="btn-angie" class="trigger">
+
+      <label for="btn-angie" class="tarjeta">
+
+        <div class="foto-perfil">
+
+          <img src="https://cdn-icons-png.flaticon.com/512/616/616412.png" alt="Angie">
+
+        </div>
+
+        <div class="nombre">Angie Palo</div>
+
+        <div class="indicador">CLIC PARA INFO</div>
+
+        <div class="info-detallada">
+
+          Angie tiene <strong>19 años</strong> y es una apasionada de la programación. Disfruta crear estructuras de software eficientes.
+
+        </div>
+
+      </label>
+
     </div>
 
-    <div class="member-card" xx="toggleInfo(this)">
-      <div class="logo-container">
-        <img src="https://cdn-icons-png.flaticon.com/512/6944/6944351.png" alt="Camila Encapuchada">
-      </div>
-      <h2>Camila Verme</h2>
-      <p class="instruction">¡HAZ CLIC PARA VER PERFIL!</p>
-      <div class="extra-info">
-        <strong>Edad:</strong> 19 años<br>
-        Le encanta la programación y siempre tiene la intención de aprender cosas nuevas y retos de IA.
-      </div>
+
+
+    <div class="tarjeta-container">
+
+      <input type="checkbox" id="btn-camila" class="trigger">
+
+      <label for="btn-camila" class="tarjeta">
+
+        <div class="foto-perfil">
+
+          <img src="https://cdn-icons-png.flaticon.com/512/6944/6944351.png" alt="Camila">
+
+        </div>
+
+        <div class="nombre">Camila Verme</div>
+
+        <div class="indicador">CLIC PARA INFO</div>
+
+        <div class="info-detallada">
+
+          Camila tiene <strong>19 años</strong> le gusta mucho la programación y siempre tiene la intención de estar <strong>aprendiendo cosas nuevas</strong> de IA.
+
+        </div>
+
+      </label>
+
     </div>
+
   </div>
 
 
-  <script>
-    function toggleInfo(card) {
-      card.classList.toggle('active');
-    }
-  </script>
-
 </body>
+
 </html>
