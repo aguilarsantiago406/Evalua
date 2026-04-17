@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Engineering & IA Team</title>
+  
+  <style>
+    :root {
+      --accent-color: #00f2ff; 
+      --bg-dark: #0a0b10; /* Azul casi negro, muy pro */
+      --card-bg: #ffffff;
+    }
+
+
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+
+      /* Fondo azul oscuro profundo con efecto de malla */
+      background-color: #0a0b10;
+      background-image: 
+        linear-gradient(rgba(0, 242, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 242, 255, 0.05) 1px, transparent 1px);
+      background-size: 30px 30px;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: #fff;
+      text-shadow: 0 0 15px var(--accent-color);
+    }
+
+    .presentation {
+      max-width: 750px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 25px;
+      border-radius: 15px;
+      backdrop-filter: blur(8px);
+      margin-bottom: 40px;
+      border: 1px solid rgba(0, 242, 255, 0.3);
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .team-container {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .member-card {
+      background: var(--card-bg);
+      color: #1a1a2e;
+      width: 300px;
+      padding: 30px;
+      border-radius: 25px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      cursor: pointer;
+      border: 3px solid transparent;
+    }
+
+    .member-card:hover {
+      transform: translateY(-15px);
+      border-color: var(--accent-color);
+      box-shadow: 0 0 30px rgba(0, 242, 255, 0.4);
+    }
+
+    .logo-container {
+      width: 160px;
+      height: 160px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      border: 4px solid var(--accent-color);
+      overflow: hidden;
+      background: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .member-card h2 {
+      margin: 10px 0;
+      font-size: 1.6rem;
+      color: #0a0b10;
+    }
+
+    .instruction {
+      font-size: 0.8rem;
+      color: #008f96;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .extra-info {
+      max-
+      overflow: hidden;
+      transition: all 0.5s ease;
+      opacity: 0;
+      font-size: 1rem;
+      color: #444;
+      padding: 0 5px;
+    }
+
+    .member-card.active .extra-info {
+      max-height: 150px;
+      opacity: 1;
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 2px solid #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>TECH INNOVATORS</h1>
+    <div class="presentation">
+      <p>Somos un equipo de <strong>SENATI</strong> especializado en <strong>Ingeniería de Software con IA</strong>. 
+      Nuestra misión es investigar, aprender y desarrollar sistemas avanzados que definan el futuro tecnológico.</p>
+    </div>
+  </header>
+
+  <div class="team-container">
+    <div class="member-card" xx="toggleInfo(this)">
+      <div class="logo-container">
+        <img src="https://cdn-icons-png.flaticon.com/512/2353/2353678.png" alt="Santiago Pinguino">
+      </div>
+      <h2>Santiago Aguilar</h2>
+      <p class="instruction">¡HAZ CLIC PARA VER PERFIL!</p>
+      <div class="extra-info">
+        <strong>Edad:</strong> 20 años.<br>
+        Un chico muy hábil que le apasiona la programación y el desarrollo de sistemas inteligentes.
+      </div>
+    </div>
+
+    <div class="member-card" xx="toggleInfo(this)">
+      <div class="logo-container">
+        <img src="https://cdn-icons-png.flaticon.com/512/616/616412.png" alt="Angie Leona">
+      </div>
+      <h2>Angie Palo</h2>
+      <p class="instruction">¡HAZ CLIC PARA VER PERFIL!</p>
+      <div class="extra-info">
+        <strong>Edad:</strong> 19 años.<br>
+        Chica programadora dedicada, amante del código y apasionada por la ingeniería de software.
+      </div>
+    </div>
+
+    <div class="member-card" xx="toggleInfo(this)">
+      <div class="logo-container">
+        <img src="https://cdn-icons-png.flaticon.com/512/6944/6944351.png" alt="Camila Encapuchada">
+      </div>
+      <h2>Camila Verme</h2>
+      <p class="instruction">¡HAZ CLIC PARA VER PERFIL!</p>
+      <div class="extra-info">
+        <strong>Edad:</strong> 19 años<br>
+        Le encanta la programación y siempre tiene la intención de aprender cosas nuevas y retos de IA.
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleInfo(card) {
+      card.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
