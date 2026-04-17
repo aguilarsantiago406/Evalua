@@ -8,6 +8,11 @@
     android:background="#F0F4F8"
     tools:context=".MainActivity">
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4D000000" />
+
     <TextView
         android:id="@+id/txtTitulo"
         android:layout_width="wrap_content"
